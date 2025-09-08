@@ -48,15 +48,43 @@ Se consideró que todos los procesos pasan de alguna forma por la Jefatura de Ad
 | Plataforma INSPEKTOR | Sistema externo | Herramienta de validación legal y revisión de listas restrictivas de proveedores. | Área jurídica / cumplimiento |
 
 ## 🔍 Investigación complementaria
-### Tema investigado:
-(Ej: Buenas prácticas BPMN, comparación TOGAF vs C4, principios de seguridad STRIDE, etc.)
+
+### Uso del Modelo C4 en Casos Reales
+
+A continuación se detalla cómo dos ejemplos distintos, Spotify y Google Maps, han aplicado o ilustrado el modelo C4 para la visualización de arquitecturas de software.
+
+#### Caso 1: Spotify
+
+Spotify ha adoptado la notación y las mejores prácticas del modelo C4, pero ha adaptado su capa de abstracción original al Spotify System Model". Este modelo interno utiliza niveles de diagramas que se corresponden con los del C4:
+
+*   Diagrama de contexto del sistema (System context diagram), que es directamente el Nivel 1 (System Context) del C4.
+*   Diagrama de componentes del sistema (System components diagram), equivalente al Nivel 2 (Container diagram) de C4.
+*   Su concepto de "Componentes" dentro del Spotify System Model se alinea conceptualmente con el Nivel 3 (Components) de C4.
+*   También utilizan un "System landscape diagram" para una vista de muy alto nivel de un conjunto de sistemas relacionados.
+
+En términos generales, Spotify usó esta adaptación para establecer un modelo de metadatos de software estandarizado, creando un lenguaje común para visualizar su compleja red de miles de sistemas. La aplicación del modelo C4, junto con su catálogo de software en Backstage, les permitió automatizar la generación de diagramas arquitectónicos. Esta automatización asegura que los diagramas estén siempre actualizados con el diseño intencional y facilita la comprensión, comunicación y colaboración entre equipos. Además, sirve como una herramienta valiosa para el onboarding de nuevos empleados y stakeholders.
+
+#### Caso 2: Google Maps (Ejemplo)
+
+El sistema Google Maps fue utilizado como un ejemplo de un caso real para ilustrar la aplicación de los cuatro niveles completos del modelo C4. Este ejemplo se desglosa de la siguiente manera:
+
+*   **Nivel 1: Diagrama de Contexto (C1)**: Describe cómo Google Maps interactúa con sus usuarios y sistemas externos, como servicios de ubicación y proveedores de datos de tráfico.
+*   **Nivel 2: Diagrama de Contenedores (C2)**: Detalla las piezas principales del sistema, dividiendo Google Maps en sus contenedores principales como el *frontend*, los *servicios de backend* y las *bases de datos*.
+*   **Nivel 3: Diagrama de Componentes (C3)**: Se enfoca en los internos de un contenedor específico, como el "Routing Service", mostrando módulos como el "Route Planner", "Traffic Adjuster" y "Distance Calculator".
+*   **Nivel 4: Diagrama de Código (C4)**: Describe la lógica de un solo componente, como el "Distance Calculator", detallando sus métodos públicos y privados
+
+En términos generales, este caso de Google Maps se usa para demostrar cómo los principios del C4 pueden aplicarse a cualquier aplicación y cómo la visualización jerárquica facilita la comprensión y comunicación de arquitecturas de software complejas. Los diagramas de este ejemplo fueron generados con la herramienta Mermaid Live, lo que también ilustra una forma práctica de crear estas representaciones. El uso del modelo C4, como se muestra en este ejemplo, es fundamental para tender puentes de comunicación entre equipos técnicos y no técnicos, proporcionando claridad tanto en la visión general como en los detalles.
 
 ### Resumen:
-Describa en 2–3 párrafos lo investigado, citando fuentes cuando sea necesario. Incluya cómo se relaciona con el taller.
+Hemos explorado dos casos del modelo C4:
+
+*   **Spotify** adaptó las mejores prácticas del C4 a su **"Spotify System Model"** para visualizar su red de miles de sistemas. Esta adaptación permitió la automatización de diagramas arquitectónicos en Backstage, asegurando su actualización y mejorando la comunicación y colaboración entre equipos.
+
+*   El sistema **Google Maps** se utilizó como un ejemplo práctico para ilustrar la aplicación de los cuatro niveles completos del C4. Esto demostró cómo el C4 desglosa una aplicación compleja desde el contexto hasta el código, facilitando la comprensión y comunicación de arquitecturas de software entre equipos técnicos y no técnicos.
 
 ## 📚 Referencias
-- [1] Apellido, Nombre. *Título*. Año. URL o DOI.
-- [2] Fuente oficial BPMN: https://www.omg.org/spec/BPMN/
+- [1] https://engineering.atspotify.com/2022/07/software-visualization-challenge-accepted
+- [2] https://dev.to/anwaar/c4-model-real-world-example-with-google-maps-3ano
 
 ---
 
