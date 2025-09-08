@@ -98,11 +98,12 @@
         <mxCell id="vUWhtkJgjT2QCS8tpEmu-6" value="Proveedores" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCFFFF;" vertex="1" parent="1">
           <mxGeometry x="40" y="469" width="100" height="55.5" as="geometry" />
         </mxCell>
-        <mxCell id="vUWhtkJgjT2QCS8tpEmu-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="vUWhtkJgjT2QCS8tpEmu-9">
+        <mxCell id="vUWhtkJgjT2QCS8tpEmu-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="vUWhtkJgjT2QCS8tpEmu-9" target="vUWhtkJgjT2QCS8tpEmu-10">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="510" y="489" as="sourcePoint" />
             <mxPoint x="710" y="491.75" as="targetPoint" />
             <Array as="points">
+              <mxPoint x="510" y="472" />
               <mxPoint x="510" y="492" />
             </Array>
           </mxGeometry>
@@ -140,12 +141,12 @@
         <mxCell id="vUWhtkJgjT2QCS8tpEmu-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="vUWhtkJgjT2QCS8tpEmu-10" target="vUWhtkJgjT2QCS8tpEmu-9">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="710" y="520" />
+              <mxPoint x="730" y="520" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="vUWhtkJgjT2QCS8tpEmu-10" value="INSPEKTOR" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fillColor=#FFE599;" vertex="1" parent="1">
-          <mxGeometry x="710" y="485.5" width="131" height="39" as="geometry" />
+          <mxGeometry x="730" y="485.5" width="131" height="39" as="geometry" />
         </mxCell>
         <mxCell id="vUWhtkJgjT2QCS8tpEmu-14" value="Radica la Solicitudes y Soportes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
           <mxGeometry x="270.00038806882935" y="249.99658529057922" as="geometry">
@@ -153,7 +154,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="vUWhtkJgjT2QCS8tpEmu-17" value="Resultados de Validación" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="200.00038806882935" y="369.9965852905792" as="geometry">
+          <mxGeometry x="230.00038806882935" y="369.9965852905792" as="geometry">
             <mxPoint x="403" y="141" as="offset" />
           </mxGeometry>
         </mxCell>
