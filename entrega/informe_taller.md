@@ -19,12 +19,25 @@ Para la construcción del C1 (Vista de Contexto) del sistema de adquisiciones de
 
 El modelado se realizó en draw.io, iniciando con los actores más evidentes (Unidad Solicitante, Jefatura de Adquisiciones, Proveedores) y luego se fueron incorporando instancias de validación y control (Decanos, Comité/Subcomisión, Plataforma INSPEKTOR).
 
+Para la construcción del C2 (Vista de Contenedores) del sistema de adquisiciones de la Universidad de La Sabana, tambien se tuvo en cuenta la documentación sumisnistrada, donde se identificaron los sistemas que soportan la gestión de adquisiciones (Portal de Servicios, SIGA Financiero ERP, Excel/SharePoint interno) y los servicios externos que intervienen en procesos críticos, como INSPEKTOR/DataLAFT para validación de listas restrictivas.
+
+El modelado se elaboró en draw.io, representando primero la nube de infraestructura (Oracle Cloud) y destacando que los productos principales (Portal de Servicios y SIGA Financiero ERP) funcionan en modalidad SaaS. Posteriormente se añadieron los mecanismos de comunicación y soporte (Correo Institucional, Excel/SharePoint) y se integraron los flujos de interacción entre solicitantes, validadores internos y proveedores externos.
+
 ## 🧩 Análisis del modelo propuesto
 Incluya un análisis sobre:
-- **Cómo se estructura el modelo entregado:** El modelo C1 se estructuró mostrando de manera clara los distintos actores que participan en el proceso de adquisiciones y las relaciones que mantienen entre sí. Se diferenciaron los roles que generan solicitudes, los que autorizan o validan, los que gestionan y acompañan, y aquellos que participan como proveedores externos o instancias de control. A través de las conexiones entre ellos se representa el flujo completo de la información y de las responsabilidades, resaltando la interacción continua entre áreas internas y externas que intervienen en el ciclo de adquisición.
+- **Cómo se estructura el modelo entregado C1:** El modelo C1 se estructuró mostrando de manera clara los distintos actores que participan en el proceso de adquisiciones y las relaciones que mantienen entre sí. Se diferenciaron los roles que generan solicitudes, los que autorizan o validan, los que gestionan y acompañan, y aquellos que participan como proveedores externos o instancias de control. A través de las conexiones entre ellos se representa el flujo completo de la información y de las responsabilidades, resaltando la interacción continua entre áreas internas y externas que intervienen en el ciclo de adquisición.
 - **Cómo representa las necesidades del cliente:** El modelo refleja de manera clara cómo las unidades solicitantes pueden iniciar y hacer seguimiento a sus solicitudes, cómo los decanos/directores aprueban presupuestos, cómo la Jefatura de Adquisiciones coordina y controla el proceso, y cómo participan actores externos como proveedores e INSPEKTOR. Con esto, se abordan las principales necesidades del cliente: trazabilidad, control financiero y cumplimiento normativo.
 - **Qué supuestos se tomaron:** Se asumió que el SIGA y el Portal de Servicios se representan como un único sistema en el C1, para no sobrecargar el diagrama con detalles técnicos.
 Se consideró que todos los procesos pasan de alguna forma por la Jefatura de Adquisiciones, aun cuando en la práctica puedan existir diferentes niveles de autonomía.
+
+- **Cómo se estructura el modelo entregado C2:** El modelo C2 se estructuró identificando los principales contenedores tecnológicos que soportan el proceso de adquisiciones. Se representaron los sistemas core en la nube (Portal de Servicios y SIGA Financiero ERP), los módulos de soporte interno (Excel/SharePoint para seguimiento local), y los servicios externos de validación (INSPEKTOR/DataLAFT). Además, se incluyó el correo institucional como medio transversal de comunicación y validación. La disposición de estos elementos dentro de la nube de Oracle Cloud refuerza la visión de que son soluciones SaaS gestionadas centralmente, mientras que los flujos de datos muestran cómo circula la información entre actores internos y externos.
+
+- **Qué supuestos se tomaron:**
+- Se asumió que el Portal de Servicios y SIGA Financiero ERP funcionan como productos SaaS en Oracle Cloud, sin necesidad de mostrar detalles de infraestructura ni bases de datos.
+
+- Se consideró que Excel/SharePoint interno actúa como repositorio complementario para indicadores y seguimiento local, aunque en la práctica puedan existir otras herramientas de BI o reportes.
+
+- Se estableció que el correo institucional es un medio de apoyo, usado para validaciones y solicitudes especiales, sin representar notificaciones automáticas integradas desde SIGA o el Portal.
 
 ## 📈 Diagrama final entregado
 ### Vista de contexto
